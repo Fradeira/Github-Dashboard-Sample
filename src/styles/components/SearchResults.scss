@@ -1,0 +1,35 @@
+
+.searchResults{
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  gap: 20px;
+
+  .card{
+    height: 350px;
+    width: 300px;
+    margin-left: unset !important;
+
+    .avatar{
+      width: 56px;
+      height: 56px;
+      margin: 0 auto;
+    }
+
+    .name{
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .card-repos{
+      height: 150px;
+      overflow-y: scroll;
+
+      nav, ul{
+        height: 100%;
+      }
+    }
+  }
+}

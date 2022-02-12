@@ -1,0 +1,12 @@
+@import '../global/mixins';
+@import '../global/colors';
+
+.linkRepo{
+  @include linkNoCss;
+
+  color: $rose;
+}
+
+.avatar_detail{
+  margin: 10px auto;
+}

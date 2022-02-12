@@ -1,0 +1,7 @@
+@import '../global/mixins';
+
+.goHome{
+  a{
+    @include linkNoCss;
+  }
+}

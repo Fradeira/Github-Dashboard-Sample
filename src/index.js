@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/main.scss';
+import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import {Header} from "./components/Header";
+import {RepoDetails} from "./components/Repo-details";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+        <Header />
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/repo-details" element={<RepoDetails />} />
+        </Routes>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 
